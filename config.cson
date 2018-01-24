@@ -1,5 +1,9 @@
 "*":
+  "autocomplete-python":
+    useKite: false
+    useSnippets: "all"
   core:
+    restorePreviousWindowsOnStart: "no"
     telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
@@ -8,7 +12,11 @@
   editor:
     fontFamily: "monaco"
     showIndentGuide: true
+    showLineNumbers: true
+    tabLength: 4
   "exception-reporting":
     userId: "a399bfe3-7f2b-4535-9edc-d9312a3f6413"
+  "linter-ui-default":
+    showPanel: true
   welcome:
     showOnStartup: false
