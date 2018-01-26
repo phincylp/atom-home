@@ -1,0 +1,368 @@
+@import 'syntax-variables';
+
+atom-text-editor {
+  background-color: @syntax-background-color;
+  color: @syntax-text-color;
+
+  .invisible-character {
+    color: @syntax-invisible-character-color;
+  }
+
+  .indent-guide {
+    color: @syntax-indent-guide-color;
+  }
+
+  .wrap-guide {
+    background-color: @syntax-wrap-guide-color;
+  }
+
+  .gutter {
+    background-color: @syntax-gutter-background-color;
+  }
+
+  .line-number.cursor-line-no-selection {
+    background-color: @syntax-gutter-background-color-selected;
+  }
+
+  .invisible {
+    color: @syntax-text-color;
+  }
+
+  .cursor {
+    border-color: @syntax-cursor-color;
+  }
+
+  .selection .region {
+    background-color: @syntax-selection-color;
+  }
+
+  .search-results .syntax--marker .region {
+    background-color: transparent;
+    border: 1px solid @syntax-result-marker-color;
+  }
+
+  .search-results .syntax--marker.current-result .region {
+    border: 1px solid @syntax-result-marker-color-selected;
+  }
+
+  .syntax--gfm {
+    .syntax--markup {
+      &.syntax--heading {
+        color: @green;
+        font-weight: bold;
+      }
+
+      &.syntax--underline {
+        color: @yellow;
+        text-decoration: underline;
+      }
+    }
+
+    .syntax--bold {
+      font-weight: bold;
+    }
+
+    .syntax--italic {
+      font-style: italic;
+    }
+
+    .syntax--raw {
+      color: @blue;
+    }
+
+    .syntax--variable.syntax--list {
+      color: @pink;
+      font-weight: bold;
+    }
+
+    .syntax--link {
+      color: @light-gray;
+
+      .syntax--entity {
+        color: @purple;
+      }
+    }
+  }
+}
+
+.syntax--comment {
+  color: @brown;
+}
+
+.syntax--constant {
+  &.syntax--character,
+  &.syntax--language,
+  &.syntax--numeric,
+  &.syntax--other {
+    color: @purple;
+  }
+}
+
+.syntax--entity {
+  &.syntax--name.syntax--class {
+    text-decoration: none;
+    color: @green;
+  }
+
+  &.syntax--name.syntax--function {
+    color: @green;
+  }
+
+  &.syntax--name.syntax--instance {
+    color: @blue;
+  }
+
+  &.syntax--name.syntax--tag {
+    color: @pink;
+  }
+
+  &.syntax--other.syntax--attribute-name {
+    color: @green;
+  }
+
+  &.syntax--other.syntax--inherited-class {
+    font-style: italic;
+    text-decoration: none;
+    color: @green;
+  }
+}
+
+.syntax--invalid {
+  color: @ghost-white;
+  background-color: @pink;
+
+  &.syntax--deprecated {
+    background-color: @purple;
+  }
+}
+
+.syntax--keyword {
+  color: @pink !important;
+}
+
+.syntax--meta.syntax--tag {
+  color: @syntax-text-color;
+}
+
+.syntax--storage {
+  color: @pink;
+
+  &.syntax--type {
+    font-style: italic;
+    color: @blue;
+  }
+}
+
+.syntax--string {
+  color: @yellow;
+}
+
+.syntax--support {
+  &.syntax--constant,
+  &.syntax--function {
+    color: @blue;
+  }
+
+  &.syntax--class,
+  &.syntax--type {
+    font-style: italic;
+    color: @blue;
+  }
+}
+
+.syntax--variable {
+  &.syntax--parameter {
+    font-style: italic;
+    color: @orange;
+  }
+
+  // 'self' Python
+  &.syntax--language.syntax--python,
+  // 'this' Javascript
+  &.syntax--language.syntax--js {
+    color: @pink;
+  }
+}
+
+// Jade syntax
+.syntax--class.syntax--jade {
+  color: @purple;
+}
+
+// Prevent underlines from making their way into whitespace elements
+.leading-whitespace,
+.trailing-whitespace {
+  display: inline-block;
+}
+
+.syntax--js {
+  .syntax--template {
+    .syntax--element {
+      .syntax--quasi.syntax--begin, .syntax--quasi.syntax--end, .syntax--language {
+        color: @pink;
+      }
+
+      .syntax--variable, .syntax--brace, .syntax--comma {
+        color: @syntax-text-color;
+      }
+
+      .syntax--constant {
+        color: @purple;
+      }
+    }
+  }
+}
+
+.syntax--json {
+  .syntax--key {
+    .syntax--string {
+      color: #a6e22e;
+    }
+  }
+}
+//## -- ALL CODES -- ## \\
+
+// MAKE SINGLE QUOTE TEXT JUST A BIT DIFFERENT
+.syntax--string{
+  &.syntax--quoted{
+	&.syntax--single { // change single to double to switch colors
+	  color: @co-single-quotes;
+	}
+  }
+}
+// MAKE CSS ID AND CLASS COLORS AND PSUEDO
+.syntax--entity.syntax--other {
+	&.syntax--class {
+		color: @green;
+	}
+	&.syntax--id {
+		color: @yellow;
+	}
+	&.syntax--pseudo-class{
+		color: @orange;
+	}
+	&.syntax--pseudo-element{
+		color: #ff5858;
+	}
+}
+//## -- PHP CUSTOM SECTION -- ## \\
+
+// MAKES FUNC CALLS -BLUE
+.syntax--php {
+	&.syntax--function-call {
+	  color: @co-function;
+	}
+	// MAKE PARAMETERS FOR PHP FUNCS -ORANGE
+	&.syntax--function {
+	  &.syntax--arguments {
+	    .syntax--variable{
+	      color: @orange;
+	    }
+	  }
+	}
+	// MAKE VARIABLES IN QUOTES NOTICABLE
+	&.syntax--sql{
+	  .syntax--variable {
+	    color: @co-sql-var;
+	  }
+	}
+	// MAKE SQL_CODE -BLUE AND NOT ECHO
+	&.syntax--support {
+	  &.syntax--function {
+	    &:not(.syntax--output):not(.syntax--construct) {
+	      color: @co-function;
+	    }
+	  }
+	}
+	// MAKES <?PHP STAND OUT
+	&.syntax--punctuation{
+		&.syntax--section{
+		&.syntax--embedded{
+		&.syntax--php{
+		&.syntax--begin,
+	    	&.syntax--end{
+				color: @co-php;
+			}
+		}}}
+	}
+	// MAKES PAREN -GREEN WITH FUNCTIONS AND SUCH.
+	&.syntax--punctuation {
+		&.syntax--definition {
+		&.syntax--parameters {
+		&.syntax--begin,
+			&.syntax--end {
+				color: @green;
+				}
+			}}
+	}
+	// MAKES EVERYTHING BUT VARIABLES -GREEN IF A ARGUEMENT OF FUNCTION
+	&.syntax--function.syntax--arguments.syntax--php {
+		color: @green;
+	}
+	// MAKE VARIABLE WHITE
+	.syntax--variable {
+		color: @light-ghost-white;
+	}
+}
+
+//## -- JS CUSTOM SECTION -- ## \\
+
+.syntax--js {
+	//ADDS FUNCTION COLOR TORQOISE
+	&.syntax--function-call{
+		> .syntax--function {
+			color: @co-function;
+		}
+		> .syntax--arguments {
+			> .syntax--bracket.syntax--round,
+				> .syntax--comma {
+					color: @co-function
+		}}
+	}
+	//ADDS METHOD COLORS TO REGULAR --BLUE
+	&.syntax--method-call{
+		> .syntax--function,
+		> .syntax--delimiter.syntax--method.syntax--period {
+			color: @blue;
+		}
+		> .syntax--arguments {
+			> .syntax--bracket.syntax--round,
+				> .syntax--comma {
+					color: @blue;
+		}}
+	}
+	// ADDS PARAMETERS COLORS FOR FUNCTIONS TO --ORANGE
+	&.syntax--function {
+		.syntax--parameter{
+			color: @orange;
+		}
+	}
+	// MAKES OBJECT PROPERTY NAMES -PINK/PURLE
+	&.syntax--property.syntax--variable {
+		color: @co-ob-prop;
+	}
+	// MAKES OBJECT FIELD NAMES LIGHT -PURPLE
+	&.syntax--property.syntax--variable.syntax--object {
+		color: @co-ob-prop-field;
+	}
+	//MAKES OBJECT NAME DARK -PURPLE ISH.
+	&.syntax--object.syntax--variable {
+		color: @co-ob-name;
+	}
+}
+//## JADE PUG CUSTOM ##\\
+
+// Need to install pug -- may not work right. Will be releasing our own sytax for pug soon.
+.syntax--pug, .syntax--jade{
+	.syntax--tag {
+	&.syntax--attribute {
+	&.syntax--class {
+		color: @orange;
+	}}}
+	.syntax--tag {
+	&.syntax--attribute {
+	&.syntax--id {
+		color: @yellow;
+	}}}
+
+}

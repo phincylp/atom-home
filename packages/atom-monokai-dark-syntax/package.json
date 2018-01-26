@@ -1,0 +1,65 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/tt/j2wqtnxd32n4ms1mjg33jp20000p7l/T/d-118025-29804-1xq9tq6.66xbgfogvi/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/tt/j2wqtnxd32n4ms1mjg33jp20000p7l/T/d-118025-29804-1xq9tq6.66xbgfogvi/package.tgz",
+        "spec": "/private/var/folders/tt/j2wqtnxd32n4ms1mjg33jp20000p7l/T/d-118025-29804-1xq9tq6.66xbgfogvi/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/tt/j2wqtnxd32n4ms1mjg33jp20000p7l/T/apm-install-dir-118025-29804-odx0ub.7d005p14i"
+    ]
+  ],
+  "_from": "../d-118025-29804-1xq9tq6.66xbgfogvi/package.tgz",
+  "_id": "atom-monokai-dark-syntax@1.4.1",
+  "_inCache": true,
+  "_location": "/atom-monokai-dark-syntax",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/tt/j2wqtnxd32n4ms1mjg33jp20000p7l/T/d-118025-29804-1xq9tq6.66xbgfogvi/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/tt/j2wqtnxd32n4ms1mjg33jp20000p7l/T/d-118025-29804-1xq9tq6.66xbgfogvi/package.tgz",
+    "spec": "/private/var/folders/tt/j2wqtnxd32n4ms1mjg33jp20000p7l/T/d-118025-29804-1xq9tq6.66xbgfogvi/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118025-29804-1xq9tq6.66xbgfogvi/package.tgz",
+  "_shasum": "dc9ec69abf6a0316d453f7b7c203f19f92e5c0ac",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/tt/j2wqtnxd32n4ms1mjg33jp20000p7l/T/d-118025-29804-1xq9tq6.66xbgfogvi/package.tgz",
+  "_where": "/private/var/folders/tt/j2wqtnxd32n4ms1mjg33jp20000p7l/T/apm-install-dir-118025-29804-odx0ub.7d005p14i",
+  "bugs": {
+    "url": "https://github.com/davidbarredo/atom-monokai-dark-syntax/issues"
+  },
+  "dependencies": {},
+  "description": "Monokai based syntax theme for Atom without interference in your selected UI theme.",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/davidbarredo/atom-monokai-dark-syntax#readme",
+  "keywords": [
+    "monokai",
+    "dark",
+    "syntax",
+    "theme"
+  ],
+  "license": "MIT",
+  "name": "atom-monokai-dark-syntax",
+  "optionalDependencies": {},
+  "readme": "# Atom Monokai dark syntax theme\n\nMonokai based syntax theme for Atom without interference in your selected dark UI theme.\n\n![Monokai Palette](./img/monokai.png)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidbarredo/atom-monokai-dark-syntax.git"
+  },
+  "theme": "syntax",
+  "version": "1.4.1"
+}

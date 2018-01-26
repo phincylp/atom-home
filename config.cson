@@ -7,16 +7,18 @@
     telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
-      "monokai"
+      "monokai-2"
     ]
   editor:
     fontFamily: "monaco"
+    fontSize: 16
     showIndentGuide: true
     showLineNumbers: true
     tabLength: 4
   "exception-reporting":
     userId: "a399bfe3-7f2b-4535-9edc-d9312a3f6413"
-  "linter-ui-default":
-    showPanel: true
+  "linter-flake8":
+    maxLineLength: 100
+  "linter-ui-default": {}
   welcome:
     showOnStartup: false
