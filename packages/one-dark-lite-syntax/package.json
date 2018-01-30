@@ -1,0 +1,63 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/tt/j2wqtnxd32n4ms1mjg33jp20000p7l/T/d-118030-35375-1pq5syk.v85llyp66r/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/tt/j2wqtnxd32n4ms1mjg33jp20000p7l/T/d-118030-35375-1pq5syk.v85llyp66r/package.tgz",
+        "spec": "/private/var/folders/tt/j2wqtnxd32n4ms1mjg33jp20000p7l/T/d-118030-35375-1pq5syk.v85llyp66r/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/tt/j2wqtnxd32n4ms1mjg33jp20000p7l/T/apm-install-dir-118030-35375-ebmw7e.tap02ro1or"
+    ]
+  ],
+  "_from": "../d-118030-35375-1pq5syk.v85llyp66r/package.tgz",
+  "_id": "one-dark-lite-syntax@0.1.0",
+  "_inCache": true,
+  "_location": "/one-dark-lite-syntax",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/tt/j2wqtnxd32n4ms1mjg33jp20000p7l/T/d-118030-35375-1pq5syk.v85llyp66r/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/tt/j2wqtnxd32n4ms1mjg33jp20000p7l/T/d-118030-35375-1pq5syk.v85llyp66r/package.tgz",
+    "spec": "/private/var/folders/tt/j2wqtnxd32n4ms1mjg33jp20000p7l/T/d-118030-35375-1pq5syk.v85llyp66r/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-118030-35375-1pq5syk.v85llyp66r/package.tgz",
+  "_shasum": "703d16f1be9217601e7cb7aac590af622eae195d",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/tt/j2wqtnxd32n4ms1mjg33jp20000p7l/T/d-118030-35375-1pq5syk.v85llyp66r/package.tgz",
+  "_where": "/private/var/folders/tt/j2wqtnxd32n4ms1mjg33jp20000p7l/T/apm-install-dir-118030-35375-ebmw7e.tap02ro1or",
+  "bugs": {
+    "url": "https://github.com/nwaywood/one-dark-lite-syntax/issues"
+  },
+  "dependencies": {},
+  "description": "One dark syntax theme for Atom with a lighter feel",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/nwaywood/one-dark-lite-syntax#readme",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "license": "MIT",
+  "name": "one-dark-lite-syntax",
+  "optionalDependencies": {},
+  "readme": "# one-dark-lite-syntax theme\n\nThis syntax theme is based off the official [one dark](https://atom.io/themes/one-dark-syntax) by the Atom team.\n\nI love the one-dark theme however I feel it is a little visually 'heavy' (especially of the amount of red coloring) this theme differs in the following ways:\n\n* Most variables are `grey` instead of `red`, giving pages are much 'lighter' feel\n* `purple` is exclusively used for keywords - in `one-dark` purple is used for keywords but also for some other minor things\n* Other misc differences\n\n## Screenshot\n\nOne-dark-lite theme:\n\n![One dark lite theme](./screenshots/one-dark-lite.png)\n\nAnd here is the one-dark theme of the same code for comparison:\n\n![One dark theme](./screenshots/one-dark.png)\n\n## Inspiration\n\n* [one-dark-syntax](https://github.com/atom/one-dark-syntax)\n* [one-dark-pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nwaywood/one-dark-lite-syntax.git"
+  },
+  "theme": "syntax",
+  "version": "0.1.0"
+}
