@@ -7,7 +7,7 @@
     telemetryConsent: "limited"
     themes: [
       "one-dark-ui"
-      "monokai-2"
+      "atom-material-syntax-dark"
     ]
   editor:
     fontFamily: "monaco"
