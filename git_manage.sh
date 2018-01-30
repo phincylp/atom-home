@@ -12,7 +12,7 @@ then
     git clean -df
 elif [ $stg==2 ]
 then
-    executing git checkout -- .
+    git checkout -- .
 else
     echo "usage is $0 <1 for unstaged> | <2 for staged>"
 fi
