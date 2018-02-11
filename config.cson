@@ -19,6 +19,8 @@
     userId: "a399bfe3-7f2b-4535-9edc-d9312a3f6413"
   "linter-flake8":
     maxLineLength: 100
-  "linter-ui-default": {}
+  "linter-ui-default":
+    showPanel: true
+    showProviderName: true
   welcome:
     showOnStartup: false
