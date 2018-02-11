@@ -6,8 +6,8 @@
     restorePreviousWindowsOnStart: "no"
     telemetryConsent: "limited"
     themes: [
-      "one-dark-ui"
-      "atom-material-syntax-dark"
+      "atom-material-ui"
+      "atom-material-syntax"
     ]
   editor:
     fontFamily: "monaco"
@@ -19,7 +19,6 @@
     userId: "a399bfe3-7f2b-4535-9edc-d9312a3f6413"
   "linter-flake8":
     maxLineLength: 100
-  "linter-ui-default":
-    showPanel: true
+  "linter-ui-default": {}
   welcome:
     showOnStartup: false
