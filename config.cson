@@ -7,7 +7,7 @@
     telemetryConsent: "limited"
     themes: [
       "atom-material-ui"
-      "atom-material-syntax"
+      "monokai-2"
     ]
   editor:
     fontFamily: "monaco"
