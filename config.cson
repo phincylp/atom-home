@@ -20,6 +20,7 @@
   "linter-flake8":
     maxLineLength: 100
   "linter-ui-default":
+    showPanel: true
     showProviderName: true
   welcome:
     showOnStartup: false
