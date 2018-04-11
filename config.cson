@@ -11,7 +11,6 @@
     ]
   editor:
     fontFamily: "monaco"
-    fontSize: 16
     showIndentGuide: true
     showLineNumbers: true
     tabLength: 4
@@ -20,7 +19,6 @@
   "linter-flake8":
     maxLineLength: 100
   "linter-ui-default":
-    showPanel: true
     showProviderName: true
   welcome:
     showOnStartup: false
